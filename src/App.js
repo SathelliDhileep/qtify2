@@ -1,7 +1,6 @@
 import "./App.css";
 import Navbar from "./components/navbar"; 
 import HeroSection from "./components/HeroSection";
-import Card from "./components/Card";
 import Section from "./components/Section";
 import { useState,useEffect } from "react";
 
