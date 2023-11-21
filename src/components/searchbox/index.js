@@ -1,6 +1,6 @@
 import { ReactComponent as SearchIcon } from "./Search icon.svg";
 
-export default () => {
+export default function SearchBox() {
   return (
     <form
       style={{

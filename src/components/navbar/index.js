@@ -4,7 +4,7 @@ import './Navbar.css'
 
 export default () =>{
     return <div className="navbar">
-        <img src="Group 1.png" width={67} height={37}/>
+        <img src="Group 1.png" width={67} height={37} alt="logo"/>
         <SearchBox/>
         <Button>Give Feedback</Button>
     </div>
