@@ -1,13 +1,20 @@
+/* .section{
+    padding: 32px;
+    width: 100%;
+    border: 5px solid red;
+} */
+
 .card-wrapper{
     height: 235px;
     display: flex;
     flex-direction: column;
     row-gap: 5px;
     width: 160px;
-    margin: 50px;
+    margin-top: 10px;
 }
 
 .card{
+
     flex:1;
     display: flex;
     flex-direction: column;
