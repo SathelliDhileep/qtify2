@@ -4,12 +4,13 @@ import './carousel.css';
 import Card from '../Card';
 
 
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-export default function Carousel({data}){
+export default function Carousel({navId,data}){
     return (
       <div className='carousel-container'>
           <Swiper
@@ -22,7 +23,7 @@ export default function Carousel({data}){
             //   type: 'fraction',
             // }}
             // navigation={true}
-            navigation={{nextEl:".arrow-left",prevEl:".arrow-right"}}
+            navigation={{nextEl:`.arrow-right-${navId}`,prevEl:`.arrow-left-${navId}`}}
             virtual
           >
             {data.map(cardData=> <SwiperSlide  key={cardData.id}>
@@ -33,10 +34,10 @@ export default function Carousel({data}){
                 /></SwiperSlide>)}
           </Swiper>
 
-          <div className='arrow-left arrow'>
+          <div className={`arrow-left-${navId} arrow-left arrow`}>
             <img src='/leftIcon.png' alt='left-cion'/>
           </div>
-          <div className='arrow-right arrow'>
+          <div className={`arrow-right-${navId} arrow-right arrow`}>
             <img src='/rightIcon.png' alt='right-icon'/>
           </div>
 
