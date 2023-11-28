@@ -1,7 +1,9 @@
 import './card.css'
+// import { Tooltip, Chip } from "@mui/material";
 
 export default function Card({imgSrc,followersCount,label}){
     return (
+        // <Tooltip title={`${songs.length} songs`} placement="top" arrow>
         <div className='card-wrapper'>
             <div className='card'>
                 <div className='card-img-frame'>
@@ -18,5 +20,7 @@ export default function Card({imgSrc,followersCount,label}){
                {label}
             </p>
         </div>
+        // </Tooltip>
+
     )
 }

@@ -5,6 +5,7 @@ import Section from "./components/Section";
 import { useState,useEffect } from "react";
 import FilterSection from "./components/FilterSection";
 import axios from 'axios';
+import FAQ from "./components/FAQ";
 
 const endPoint='https://qtify-backend-labs.crio.do/'
 
@@ -35,14 +36,15 @@ function App() {
     .then((res)=>{
       setZoners([{"key":"all","label":"All"},...res.data.data]);
     })
-
-    // fetch(`${endPoint}albums/top`)
+     // fetch(`${endPoint}albums/top`)
     // .then(res=>res.json())
     // .then(data => setTopAlbums(data))
     
     // fetch(`${endPoint}albums/new`)
     // .then(res=>res.json())
     // .then(data => setnewAlbums(data))
+
+   
 
   },[])
 
@@ -61,7 +63,7 @@ function App() {
           }
         }}
       />
-
+      <FAQ/>
 
     </div>
   );
