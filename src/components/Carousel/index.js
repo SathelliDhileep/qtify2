@@ -10,7 +10,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-export default function Carousel({navId,data}){
+export default function Carousel({navId,data,songs}){
+  // console.log(data)
     return (
       <div className='carousel-container'>
           <Swiper
@@ -31,7 +32,7 @@ export default function Carousel({navId,data}){
                     imgSrc={cardData.image}
                     label={cardData.title}
                     followersCount={cardData.follows}
-                /></SwiperSlide>)}
+                    /></SwiperSlide>)}
           </Swiper>
 
           <div className={`arrow-left-${navId} arrow-left arrow`}>

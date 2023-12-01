@@ -10,32 +10,33 @@ const FAQ = () => {
   return (
     <div className="faqQuestions">
       <h1 className="faqTitle">FAQs</h1>
-
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          className="faqAccordionSummary"
-        >
-          <Typography>Is QTify free to use?</Typography>
-        </AccordionSummary>
-        <AccordionDetails className="faqAccordionDetails">
-          <Typography>Yes! It is 100% free, and has 0% ads!</Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          className="faqAccordionSummary"
-        >
-          <Typography>Can I download and listen to songs offline?</Typography>
-        </AccordionSummary>
-        <AccordionDetails className="faqAccordionDetails">
-          <Typography>
-            Sorry, unfortunately we don't provide the service to download any
-            songs.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+      <div className="alignment">
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            className="faqAccordionSummary"
+          >
+            <Typography>Is QTify free to use?</Typography>
+          </AccordionSummary>
+          <AccordionDetails className="faqAccordionDetails">
+            <Typography>Yes! It is 100% free, and has 0% ads!</Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            className="faqAccordionSummary"
+          >
+            <Typography>Can I download and listen to songs offline?</Typography>
+          </AccordionSummary>
+          <AccordionDetails className="faqAccordionDetails">
+            <Typography>
+              Sorry, unfortunately we don't provide the service to download any
+              songs.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      </div>
     </div>
   );
 };

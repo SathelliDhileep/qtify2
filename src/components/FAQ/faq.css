@@ -10,7 +10,10 @@
     width: 1135px;
     margin-left: 153px;
     margin-bottom: 40px;
-  }
+    /* padding: 60px; */
+    width: 1135px;
+   
+}
   
   .faqAccordionSummary {
     color:  var(--css-white) !important;
